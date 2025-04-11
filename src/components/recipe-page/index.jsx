@@ -5,7 +5,7 @@ const RecipePage = () => {
     <div className="w-full min-h-screen flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12 p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12">
       <div className="w-full sm:w-[95%] md:w-[90%] lg:w-[85%] xl:w-[80%] max-w-[1400px] bg-[#FFFEFE] rounded-lg flex flex-col sm:flex-row">
         {/* Main Form Area - full width on mobile, constrained on larger screens */}
-        <div className="w-full  p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12">
+        <div className="w-full p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12">
           {/* Header - flex column on mobile, row on sm+ */}
           <div className="flex flex-col sm:flex-row justify-between items-center mb-6 sm:mb-8 md:mb-10 lg:mb-12">
             <div className="w-full flex justify-center">
