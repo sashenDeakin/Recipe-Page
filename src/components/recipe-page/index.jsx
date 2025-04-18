@@ -26,7 +26,7 @@ const RecipePage = () => {
                     Recipe Name
                   </label>
                   <input
-                    className="w-full sm:w-2/3 rounded-full h-10 sm:h-12 border border-gray-400 px-4"
+                    className="w-full sm:w-2/3 rounded-xl h-10 sm:h-12 border border-gray-400 px-4"
                     placeholder="Enter Recipe Name"
                   />
                 </div>
@@ -36,7 +36,7 @@ const RecipePage = () => {
                     Cuisine Type
                   </label>
                   <input
-                    className="w-full sm:w-2/3 rounded-full h-10 sm:h-12 border border-gray-400 px-4"
+                    className="w-full sm:w-2/3 rounded-xl h-10 sm:h-12 border border-gray-400 px-4"
                     placeholder="Enter Cuisine Type"
                   />
                 </div>
@@ -63,7 +63,7 @@ const RecipePage = () => {
                   Preparation Time
                 </label>
                 <input
-                  className="w-full sm:w-2/3 rounded-full h-10 sm:h-12 border border-gray-400 px-4"
+                  className="w-full sm:w-2/3 rounded-xl h-10 sm:h-12 border border-gray-400 px-4"
                   placeholder="Enter Preparation Time"
                 />
               </div>
@@ -73,7 +73,7 @@ const RecipePage = () => {
                   Total Servings
                 </label>
                 <input
-                  className="w-full sm:w-2/3 rounded-full h-10 sm:h-12 border border-gray-400 px-4"
+                  className="w-full sm:w-2/3 rounded-xl h-10 sm:h-12 border border-gray-400 px-4"
                   placeholder="Enter Total Servings"
                 />
               </div>
@@ -90,10 +90,18 @@ const RecipePage = () => {
                 <label className="w-full sm:w-1/3 text-sm sm:text-base md:text-lg">
                   Category
                 </label>
-                <input
-                  className="w-full sm:w-2/3 rounded-full h-10 sm:h-12 border border-gray-400 px-4"
-                  placeholder="Enter Category"
-                />
+                <select
+                  className="w-full sm:w-2/3 rounded-xl h-10 sm:h-12 border border-gray-400 px-4 bg-white"
+                  defaultValue=""
+                >
+                  <option value="" disabled>
+                    Select one
+                  </option>
+                  <option value="work">Work</option>
+                  <option value="personal">Personal</option>
+                  <option value="shopping">Shopping</option>
+                  <option value="others">Others</option>
+                </select>
               </div>
 
               <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-0 sm:w-1/2">
@@ -101,7 +109,7 @@ const RecipePage = () => {
                   Ingredient
                 </label>
                 <input
-                  className="w-full sm:w-2/3 rounded-full h-10 sm:h-12 border border-gray-400 px-4"
+                  className="w-full sm:w-2/3 rounded-xl h-10 sm:h-12 border border-gray-400 px-4"
                   placeholder="Enter Ingredient"
                 />
               </div>
@@ -112,10 +120,19 @@ const RecipePage = () => {
                 <label className="w-full sm:w-1/3 text-sm sm:text-base md:text-lg">
                   Quantity
                 </label>
-                <input
-                  className="w-full sm:w-2/3 rounded-full h-10 sm:h-12 border border-gray-400 px-4"
-                  placeholder="Enter Quantity"
-                />
+                <select
+                  className="w-full sm:w-2/3 rounded-xl h-10 sm:h-12 border border-gray-400 px-4 bg-white"
+                  defaultValue=""
+                >
+                  <option value="" disabled>
+                    Select one
+                  </option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
               </div>
 
               <div className="flex items-center justify-end sm:justify-end sm:w-1/2">
