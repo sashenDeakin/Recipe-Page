@@ -97,10 +97,9 @@ const RecipePage = () => {
                   <option value="" disabled>
                     Select one
                   </option>
-                  <option value="work">Work</option>
-                  <option value="personal">Personal</option>
-                  <option value="shopping">Shopping</option>
-                  <option value="others">Others</option>
+                  <option value="work">ml</option>
+                  <option value="personal">g</option>
+                  <option value="shopping">Cups</option>
                 </select>
               </div>
 
