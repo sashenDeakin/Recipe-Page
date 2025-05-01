@@ -2,20 +2,23 @@ import React from "react";
 
 const SearchPage = () => {
   return (
-    <div className="w-screen h-screen flex justify-center items-center bg-white">
-      <div className="flex flex-col justify-center items-center w-full h-full">
-        {/*   */}
+    <div className="w-screen flex justify-center items-center bg-white px-4">
+      <div className="flex flex-col justify-center items-center w-full h-full mt-24">
+        {/* Header */}
         <div className="w-full">
           <p className="text-center text-4xl font-bold">Recipes</p>
         </div>
+        {/* Disabled input placeholder */}
         <div className="w-full flex justify-center items-center mt-8">
           <input
-            className="bg-purple-200 rounded-full w-1/2 h-[66px]"
+            className="bg-purple-200 rounded-full w-[90%] sm:w-3/4 md:w-1/2 h-[66px]"
             disabled
           />
         </div>
+
+        {/* Search bar */}
         <div className="w-full flex justify-center items-center mt-4">
-          <div className="relative w-1/2">
+          <div className="relative w-[90%] sm:w-3/4 md:w-1/2">
             <svg
               className="absolute left-4 top-1/2 transform -translate-y-1/2 pointer-events-none"
               width="42"
@@ -40,17 +43,17 @@ const SearchPage = () => {
           </div>
         </div>
 
-        {/*   */}
+        {/* Popular Recipes */}
         <div className="w-full flex flex-col justify-center items-center mt-24">
           <p className="text-4xl font-semibold text-center">Popular Recipes</p>
 
           <div
-            className="grid gap-6 mt-6 px-24
-  grid-cols-1 
-  sm:grid-cols-2 
-  md:grid-cols-3 
-  lg:grid-cols-4 
-  xl:grid-cols-5"
+            className="grid gap-6 mt-6 px-4 sm:px-12 md:px-24
+            grid-cols-1 
+            sm:grid-cols-2 
+            md:grid-cols-3 
+            lg:grid-cols-4 
+            xl:grid-cols-5"
           >
             {Array.from({ length: 5 }).map((_, i) => (
               <div
